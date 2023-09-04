@@ -11,6 +11,7 @@
 
 p {
     color: #534C64;
+    font-size: 18px;
 }
 
 .primary-btn {
@@ -140,14 +141,14 @@ nav ul li {
     text-align: center;
 }
 
-.online-games h3 {
+.online-games h2 {
     font-size: 48px;
     font-weight: 700;
     color: #0B0223;
     margin-bottom: 16px;
 }
 
-.online-games h3 span {
+.online-games h2 span {
     color: #8758F1;
 }
 
@@ -170,4 +171,51 @@ nav ul li {
 .box img {
     width: 100%;
     margin-bottom: 24px;
+}
+
+
+/* play games styles */
+.play-games {
+    margin-top: 120px;
+    min-height: 550px;
+    display: flex;
+    margin-bottom: 180px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.game-images {
+    width: 65%;
+    display: flex;
+}
+
+.game-img1 {
+    z-index: -99;
+    position: absolute;
+    margin-bottom: 150px;
+}
+
+.game-img2 {
+    position: relative;
+    z-index: 1;
+    margin-top: 415px;
+    margin-left: 550px;
+}
+
+.game-play-text {
+    width: 35%;
+    align-items: center;
+    padding: 0 70px;
+}
+
+.game-play-text h2 {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.game-play-text h2 span {
+    color: #F948B2;
 }
