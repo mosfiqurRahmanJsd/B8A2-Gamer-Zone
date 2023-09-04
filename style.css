@@ -9,6 +9,10 @@
     margin: 0 auto;
 }
 
+p {
+    color: #534C64;
+}
+
 .primary-btn {
     font-size: 20px;
     font-weight: 600;
@@ -127,4 +131,43 @@ nav ul li {
 .go-rouge-btn {
     color: white;
     background-color: #4EC5F7;
+}
+
+
+/* online games styles */
+.online-games {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.online-games h3 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #0B0223;
+    margin-bottom: 16px;
+}
+
+.online-games h3 span {
+    color: #8758F1;
+}
+
+.online-games p {
+    font-size: 18px;
+    margin-bottom: 48px;
+}
+
+.game-boxes {
+    display: flex;
+    gap: 24px;
+}
+
+.box {
+    width: 342px;
+    height: 450px;
+    text-align: start;
+}
+
+.box img {
+    width: 100%;
+    margin-bottom: 24px;
 }
