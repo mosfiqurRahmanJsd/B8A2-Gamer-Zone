@@ -3,3 +3,61 @@
     margin: 0;
     font-family: 'Work Sans', sans-serif;
 }
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* header styles */
+
+
+nav {
+    min-height: 130px;
+}
+
+nav,
+ul,
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li a,
+.follow-us a {
+    text-decoration: none;
+    color: #3C354F;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.logo h2 {
+    font-size: 45px;
+    color: #0B0223;
+    padding-left: 20px;
+}
+
+.logo h2 span {
+    color: #FF42A5;
+}
+
+nav ul li {
+    padding: 54px 32px;
+}
+
+.follow-us {
+    background-color: rgba(11, 2, 35, 0.10);
+    border-radius: 8px;
+    padding: 28px 16px;
+}
+
+.follow-us a {
+    padding: 16px;
+}
