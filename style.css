@@ -220,6 +220,10 @@ nav>ul>li {
     justify-content: center;
 }
 
+.responsive-img {
+    display: none;
+}
+
 
 .game-images {
     width: 65%;
@@ -325,17 +329,20 @@ footer {
     color: #FF42A5;
 }
 
-.footer-ul {
+.footer-ul,
+.terms {
     padding: 0;
     list-style: none;
     justify-content: center;
 }
 
-.footer-ul li {
+.footer-ul li,
+.terms li {
     padding: 60px 30px;
 }
 
-.footer-ul li a {
+.footer-ul li a,
+.terms li a {
     text-decoration: none;
     color: white;
 }
@@ -372,6 +379,13 @@ footer {
 
 /* responsive design */
 @media only screen and (max-width: 768px) {
+    .top-banner {
+        background-image: none;
+    }
+
+    .container {
+        width: 100%;
+    }
 
     header {
         margin: 50px auto;
@@ -405,60 +419,81 @@ footer {
         justify-content: center;
     }
 
+    .online-games {
+        padding: 20px;
+    }
+
 
     .play-games {
         flex-wrap: wrap;
     }
 
+
     .game-images {
-        flex-wrap: wrap;
+        display: none;
+    }
+
+    .responsive-img {
+        display: block;
+        padding: 25px;
+    }
+
+    .responsive-img img {
         width: 100%;
     }
 
 
-    .play-games {
+    .game-play-text {
+        width: 100%;
+        padding-left: 0;
+        padding: 0 50px;
+        text-align: center;
+    }
 
+
+    .footer {
+        padding: 50px 0;
+    }
+
+    .logo-footer {
         display: flex;
-        margin-bottom: 180px;
-        align-items: center;
         justify-content: center;
     }
 
 
-    .game-images {
 
-        display: flex;
+    .footer-ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
     }
 
-    .game-img1 {
-        z-index: -99;
-        position: absolute;
-        margin-bottom: 150px;
+    .footer-ul li {
+        padding: 20px 10px;
     }
 
-    .game-img2 {
-        position: relative;
-        z-index: 1;
-        margin-top: 415px;
-        margin-left: 550px;
+    .footer-logo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    .game-play-text {
-        width: 35%;
-        align-items: center;
-        padding-left: 100px;
+
+    .footer-logo li {
+        padding: 20px 10px;
+        justify-content: center;
     }
 
-    .game-play-text h2 {
-        color: #0B0223;
-        font-size: 48px;
-        font-weight: 700;
-        margin-bottom: 24px;
+
+    .terms {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
     }
 
-    .game-play-text h2 span {
-        color: #F948B2;
+    .terms li {
+        padding: 30px 15px;
     }
+
 
 
 
