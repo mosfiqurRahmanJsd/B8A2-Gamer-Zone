@@ -43,7 +43,7 @@ ul,
     justify-content: space-between;
 }
 
-nav ul {
+nav>ul {
     padding: 0;
     list-style: none;
 }
@@ -66,7 +66,7 @@ nav ul li a,
     color: #FF42A5;
 }
 
-nav ul li {
+nav>ul>li {
     padding: 54px 32px;
 }
 
@@ -218,4 +218,110 @@ nav ul li {
 
 .game-play-text h2 span {
     color: #F948B2;
+}
+
+/* game button syles */
+.game-button {
+    margin-bottom: 120px;
+}
+
+.btn-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px;
+}
+
+.btn-box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.btn-box img {
+    width: 60px;
+    height: 60px;
+}
+
+.btn-box:hover {
+    border: 2px solid #FF42A5;
+}
+
+.btn-box p {
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 7px;
+}
+
+
+/* footer styles */
+footer {
+    background-color: #0B0223;
+    text-align: center;
+}
+
+.footer {
+    padding: 120px 0;
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: center;
+}
+
+
+.logo-footer h2 {
+    font-size: 45px;
+    color: #ffffff;
+    padding-left: 20px;
+}
+
+.logo-footer h2 span {
+    color: #FF42A5;
+}
+
+.footer-ul {
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+}
+
+.footer-ul li {
+    padding: 60px 30px;
+}
+
+.footer-ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-logo {
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+}
+
+.footer-logo li {
+    padding: 0 40px;
+    justify-content: center;
+}
+
+.footer-logo li a {
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+}
+
+.terms li a {
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.footer small {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
 }
