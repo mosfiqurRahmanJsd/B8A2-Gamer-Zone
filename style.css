@@ -379,6 +379,11 @@ footer {
 
 /* responsive design */
 @media only screen and (max-width: 768px) {
+
+    header {
+        box-shadow: none;
+    }
+
     .top-banner {
         background-image: none;
     }
@@ -400,6 +405,10 @@ footer {
 
     nav>ul>li {
         padding: 24px 50px;
+    }
+
+    .follow-us {
+        margin: 0 35px;
     }
 
     .banner {
