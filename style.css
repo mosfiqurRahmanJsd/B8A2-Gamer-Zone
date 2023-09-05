@@ -162,16 +162,53 @@ nav>ul>li {
     gap: 24px;
 }
 
+.box img {
+    width: 100%;
+    margin-bottom: 24px;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    display: block;
+}
+
+
 .box {
     width: 342px;
     height: 450px;
     text-align: start;
+    position: relative;
 }
 
-.box img {
-    width: 100%;
-    margin-bottom: 24px;
+.box .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
 }
+
+.box:hover img {
+    opacity: 0.3;
+}
+
+.box:hover .middle {
+    opacity: 1;
+}
+
+.box .text {
+    font-size: 48px;
+    padding: 16px 32px;
+}
+
+.box .text p {
+    font-size: 16px;
+    color: #FF42A5;
+}
+
+
 
 
 /* play games styles */
@@ -250,10 +287,16 @@ nav>ul>li {
     border: 2px solid #FF42A5;
 }
 
+.btn-box:hover p {
+    color: #FF42A5;
+}
+
+
 .btn-box p {
     font-size: 18px;
     font-weight: 600;
     padding-left: 7px;
+    color: #0B0223;
 }
 
 
